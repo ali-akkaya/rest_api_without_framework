@@ -1,14 +1,15 @@
 This is a repository for [Otsimo Machine Learning Task](https://gitlab.com/-/snippets/2078938)
-
-**wordCount**: Represent all the word in the text.
-**longestWord**: Represent longest word in the text.
-**language**: Represent the language of the text. It checks for stop words in the text and if number of english stop words more than turkish it returns English or vice-versa.
-**avgLength**: Represent average length of the words. First it counts all the letters (spaces and punctuations not counts) and divide id by wordCount.
-**letters**: Represent number of letters (spaces and punctuations not counts, It is different then len(text)).
-**alphabeticMedian**: Represent the median word when words ordered alphabetically.
-**medianWordByLength**:  Represent the median word when words ordered by their length.
-**mostFrequent**: Represent the most 5 frequent words in the text.
-**Duration**: Represent the reading duration of text in seconds. wordCount/265*60 refference to [Medium Read Time](https://help.medium.com/hc/en-us/articles/214991667-Read-time).
+<p>
+**wordCount**: Represent all the word in the text.<br>
+**longestWord**: Represent longest word in the text.<br>
+**language**: Represent the language of the text. It checks for stop words in the text and if number of english stop words more than turkish it returns English or vice-versa.<br>
+**avgLength**: Represent average length of the words. First it counts all the letters (spaces and punctuations not counts) and divide id by wordCount.<br>
+**letters**: Represent number of letters (spaces and punctuations not counts, It is different then len(text)).<br>
+**alphabeticMedian**: Represent the median word when words ordered alphabetically.<br>
+**medianWordByLength**:  Represent the median word when words ordered by their length.<br>
+**mostFrequent**: Represent the most 5 frequent words in the text.<br>
+**Duration**: Represent the reading duration of text in seconds. wordCount/265*60 refference to [Medium Read Time](https://help.medium.com/hc/en-us/articles/214991667-Read-time).<br>
+</p>
 
 After you run the script you can use following comand on your terminal:
 
