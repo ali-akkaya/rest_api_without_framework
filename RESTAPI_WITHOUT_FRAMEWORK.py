@@ -61,14 +61,13 @@ turkish_stop_words = ['acaba', 'ama', 'aslında', 'az', 'bazı', 'belki', 'biri'
 
 
 def create_a_word_list(bare_text):
+    #text_without_escape_characters = bare_text.replace('-\n\n', '')
     text_without_escape_characters = bare_text.replace('\n\n', ' ')
+
     length = len(text_without_escape_characters)
-    print(text_without_escape_characters)
+    # print(text_without_escape_characters)
     text_without_punctuation = text_without_escape_characters.translate(str.maketrans('', '', string.punctuation))
-    print(text_without_punctuation)
-    print(string.punctuation)
     words = text_without_punctuation.split()
-    print(words)
     word_count = len(words)
 
     return words, length, word_count
@@ -76,8 +75,6 @@ def create_a_word_list(bare_text):
 
 def find_longest_word(wordList):
     longest_word = max(wordList, key=len)
-    print(wordList)
-    print(longest_word)
     return longest_word
 
 
@@ -94,9 +91,7 @@ def find_language(wordList):
 
 
 def find_avg_length(wordList):
-    char_count = 0
-    for word in wordList:
-        char_count += len(word)
+    char_count = sum(len(word) for word in wordList)
     avg_length = round(char_count / len(wordList), 2)
     return avg_length, char_count
 
