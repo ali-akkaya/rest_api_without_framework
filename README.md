@@ -1,4 +1,4 @@
-This is a repository for [Otsimo Machine Learning Task](https://gitlab.com/-/snippets/2078938)
+This is a repository for some text analyze with  rest-api
 <p>
 wordCount: Represent all the word in the text.<br>
 longestWord: Represent longest word in the text.<br>
